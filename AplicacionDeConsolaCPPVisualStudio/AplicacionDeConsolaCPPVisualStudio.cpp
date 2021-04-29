@@ -2,6 +2,10 @@
 //
 
 #include <iostream>
+#include <array>
+#include <iterator>
+#include <algorithm>
+
 using namespace std;
 
 void MenuInicial();//muestra el menu inicial
@@ -10,7 +14,7 @@ void Listar();//para ver los articulos
 void Eliminar();//para borrar los articulos
 
 
-const int cantidadDeArticulos = 5;              //numero de filas
+const int cantidadDeArticulos = 1;              //numero de filas
 
 const int cantidadDeItems = 3;                             //numero de columnas
 
@@ -141,7 +145,8 @@ void Eliminar()
 		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
 		for (int i = 0; i < cantidadDeItems; i++)
 		{
-			datosDeComputadora[OpcionIngresada][i] = "";
+			datosDeComputadora[0][i] = "";
+			
 		}
 		cout << "\n";
 		break;
@@ -149,7 +154,7 @@ void Eliminar()
 		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
 		for (int i = 0; i < cantidadDeItems; i++)
 		{
-			datosDeComputadora[OpcionIngresada][i] = "";
+			datosDeComputadora[1][i] = "";
 		}
 		cout << "\n";
 		break;
@@ -157,7 +162,7 @@ void Eliminar()
 		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
 		for (int i = 0; i < cantidadDeItems; i++)
 		{
-			datosDeComputadora[OpcionIngresada][i] = "";
+			datosDeComputadora[2][i] = "";
 		}
 		cout << "\n";
 		break;
@@ -165,7 +170,7 @@ void Eliminar()
 		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
 		for (int i = 0; i < cantidadDeItems; i++)
 		{
-			datosDeComputadora[OpcionIngresada][i] = "";
+			datosDeComputadora[3][i] = "";
 		}
 		cout << "\n";
 		break;
@@ -173,7 +178,7 @@ void Eliminar()
 		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
 		for (int i = 0; i < cantidadDeItems; i++)
 		{
-			datosDeComputadora[OpcionIngresada][i] = "";
+			datosDeComputadora[4][i] = "";
 		}
 		cout << "\n";
 		break;
@@ -181,7 +186,10 @@ void Eliminar()
 		cout << "Ahora se eliminaran todos los items de los articulos \n";
 		for (int i = 0; i < cantidadDeItems; i++)
 		{
-			datosDeComputadora[OpcionIngresada][i] = "";
+			for (int j = 0; j < cantidadDeItems; j++)
+			{
+				datosDeComputadora[i][j] = "";
+			}
 		}
 		cout << "\n";
 		break;
