@@ -10,7 +10,7 @@ void Listar();
 void Eliminar();
 
 
-const int cantidadDeArticulos = 1;              //numero de filas
+const int cantidadDeArticulos = 5;              //numero de filas
 
 const int cantidadDeItems = 3;                             //numero de columnas
 
@@ -30,7 +30,7 @@ int main()
 
 void MenuInicial()//implemento la función
 {
-	cout << "Por favor ingrese el numero correcto para la acción a ejecutar \n";
+	cout << "Por favor ingrese el numero correcto para la accion a ejecutar \n";
 	cout << "1 - Registrar \n";
 	cout << "2 - Listar \n";
 	cout << "3 - Eliminar \n";
