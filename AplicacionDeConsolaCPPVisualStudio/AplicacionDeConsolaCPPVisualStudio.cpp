@@ -20,8 +20,6 @@ string  datosDeComputadora [cantidadDeArticulos][cantidadDeItems];
 
 int main()
 {
-    std::cout << "Hello World!\n";
-	
 	while (true)
 	{
 		MenuInicial();
