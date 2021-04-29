@@ -2,9 +2,6 @@
 //
 
 #include <iostream>
-#include <array>
-#include <iterator>
-#include <algorithm>
 
 using namespace std;
 
@@ -14,7 +11,7 @@ void Listar();//para ver los articulos
 void Eliminar();//para borrar los articulos
 
 
-const int cantidadDeArticulos = 1;              //numero de filas
+const int cantidadDeArticulos = 5;              //numero de filas
 
 const int cantidadDeItems = 3;                             //numero de columnas
 
@@ -37,9 +34,9 @@ void MenuInicial()//implemento la función
 	cout << "2 - Listar \n";
 	cout << "3 - Eliminar \n";
 
-	int OpcionIngresada;
+	int OpcionIngresada;//para ingresar la opción correcta
 
-	cin >> OpcionIngresada;
+	cin >> OpcionIngresada;	//hay que validar que el input no sea una letra, no lo voy a hacer, pero funciona con números correctamente.
 
 	switch (OpcionIngresada) //donde opción es la variable a comparar
 	{
@@ -135,69 +132,71 @@ void Eliminar()
 	cout << "Elija la opcion del 1 hasta al 5 para eleguir un articulo a eliminar \n";
 	cout << "Opcion 6 para eliminar TODOS los item de los articulos \n";
 	cout << "Si elije otra opcion vuelve al menu principal \n";
-	int OpcionIngresada;
+	int opcionIngresada;
 
-	cin >> OpcionIngresada;
+	cin >> opcionIngresada;
 
-	switch (OpcionIngresada) //donde opción es la variable a comparar
+
+	switch (opcionIngresada) //donde opción es la variable a comparar
 	{
-	case 1: //Bloque de instrucciones 1;
-		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
-		for (int i = 0; i < cantidadDeItems; i++)
-		{
-			datosDeComputadora[0][i] = "";
-			
-		}
-		cout << "\n";
-		break;
-	case 2: //Bloque de instrucciones 2;
-		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
-		for (int i = 0; i < cantidadDeItems; i++)
-		{
-			datosDeComputadora[1][i] = "";
-		}
-		cout << "\n";
-		break;
-	case 3: //Bloque de instrucciones 3;
-		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
-		for (int i = 0; i < cantidadDeItems; i++)
-		{
-			datosDeComputadora[2][i] = "";
-		}
-		cout << "\n";
-		break;
-	case 4: //Bloque de instrucciones 3;
-		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
-		for (int i = 0; i < cantidadDeItems; i++)
-		{
-			datosDeComputadora[3][i] = "";
-		}
-		cout << "\n";
-		break;
-	case 5: //Bloque de instrucciones 3;
-		cout << "Ahora vas a eliminar los item del articulo " << OpcionIngresada << "\n";
-		for (int i = 0; i < cantidadDeItems; i++)
-		{
-			datosDeComputadora[4][i] = "";
-		}
-		cout << "\n";
-		break;
-	case 6: //Bloque de instrucciones 3;
-		cout << "Ahora se eliminaran todos los items de los articulos \n";
-		for (int i = 0; i < cantidadDeItems; i++)
-		{
-			for (int j = 0; j < cantidadDeItems; j++)
+		case 1: //Bloque de instrucciones 1;
+			cout << "Ahora vas a eliminar los item del articulo " << opcionIngresada << "\n";
+			for (int i = 0; i < cantidadDeItems; i++)
 			{
-				datosDeComputadora[i][j] = "";
+				datosDeComputadora[0][i] = "";
+			
 			}
-		}
-		cout << "\n";
-		break;
-		//Nótese que valor 1 2 y 3 son los valores que puede tomar la opción
-		//la instrucción break es necesaria, para no ejecutar todos los casos.
-	default: //Bloque de instrucciones por defecto;
-		cout << "Opcion Incorrecta \n";
-		cout << "\n";
+			cout << "\n";
+			break;
+		case 2: //Bloque de instrucciones 2;
+			cout << "Ahora vas a eliminar los item del articulo " << opcionIngresada << "\n";
+			for (int i = 0; i < cantidadDeItems; i++)
+			{
+				datosDeComputadora[1][i] = "";
+			}
+			cout << "\n";
+			break;
+		case 3: //Bloque de instrucciones 3;
+			cout << "Ahora vas a eliminar los item del articulo " << opcionIngresada << "\n";
+			for (int i = 0; i < cantidadDeItems; i++)
+			{
+				datosDeComputadora[2][i] = "";
+			}
+			cout << "\n";
+			break;
+		case 4: //Bloque de instrucciones 3;
+			cout << "Ahora vas a eliminar los item del articulo " << opcionIngresada << "\n";
+			for (int i = 0; i < cantidadDeItems; i++)
+			{
+				datosDeComputadora[3][i] = "";
+			}
+			cout << "\n";
+			break;
+		case 5: //Bloque de instrucciones 3;
+			cout << "Ahora vas a eliminar los item del articulo " << opcionIngresada << "\n";
+			for (int i = 0; i < cantidadDeItems; i++)
+			{
+				datosDeComputadora[4][i] = "";
+			}
+			cout << "\n";
+			break;
+		case 6: //Bloque de instrucciones 3;
+			cout << "Ahora se eliminaran todos los items de los articulos \n";
+			for (int i = 0; i < 5; i++)
+			{
+				for (int j = 0; j < cantidadDeItems; j++)
+				{
+					datosDeComputadora[i][j] = "";
+				}
+			}
+			cout << "\n";
+			break;
+			//Nótese que valor 1 2 y 3 son los valores que puede tomar la opción
+			//la instrucción break es necesaria, para no ejecutar todos los casos.
+		default: //Bloque de instrucciones por defecto;
+			cout << "Opcion Incorrecta \n";
+			cout << "\n";
+			break;
 	}
 }
 
