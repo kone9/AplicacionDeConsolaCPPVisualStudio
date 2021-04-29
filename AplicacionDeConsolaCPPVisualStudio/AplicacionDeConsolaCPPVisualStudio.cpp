@@ -4,13 +4,13 @@
 #include <iostream>
 using namespace std;
 
-void MenuInicial();//declaro la funcion
-void Registrar();//declaro la funcion
-void Listar();
-void Eliminar();
+void MenuInicial();//muestra el menu inicial
+void Registrar();//para guardar los articulos
+void Listar();//para ver los articulos
+void Eliminar();//para borrar los articulos
 
 
-const int cantidadDeArticulos = 5;              //numero de filas
+const int cantidadDeArticulos = 1;              //numero de filas
 
 const int cantidadDeItems = 3;                             //numero de columnas
 
@@ -74,7 +74,7 @@ void Registrar()
 				string OpcionIngresada;
 
 				cin >> OpcionIngresada;
-				datosDeComputadora[j][i] = OpcionIngresada;
+				datosDeComputadora[i][j] = OpcionIngresada;
 			}
 			if (j == 1)
 			{
@@ -82,7 +82,7 @@ void Registrar()
 				string OpcionIngresada;
 
 				cin >> OpcionIngresada;
-				datosDeComputadora[j][i] = OpcionIngresada;
+				datosDeComputadora[i][j] = OpcionIngresada;
 			}
 			if (j == 2)
 			{
@@ -90,7 +90,7 @@ void Registrar()
 				string OpcionIngresada;
 
 				cin >> OpcionIngresada;
-				datosDeComputadora[j][i] = OpcionIngresada;
+				datosDeComputadora[i][j] = OpcionIngresada;
 			}
 		}
 	}
@@ -106,15 +106,19 @@ void Listar()
 		{
 			if (j == 0)
 			{
-				cout << "Tipo: " << datosDeComputadora[j][i] << "\n";
+				cout << "Tipo: " << datosDeComputadora[i][j];
+				cout << "\n";
+
 			}
 			if (j == 1)
 			{
-				cout << "Modelo: " << datosDeComputadora[j][i] << "\n";
+				cout << "Modelo: " << datosDeComputadora[i][j];
+				cout << "\n";
 			}
 			if (j == 2)
 			{
-				cout << "precio: " << datosDeComputadora[j][i] << "\n";
+				cout << "precio: " << datosDeComputadora[i][j];
+				cout << "\n";
 
 			}
 		}
