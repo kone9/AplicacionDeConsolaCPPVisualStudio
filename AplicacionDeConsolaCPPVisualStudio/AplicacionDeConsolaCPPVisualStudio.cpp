@@ -10,7 +10,7 @@ void Listar();//para ver los articulos
 void Eliminar();//para borrar los articulos
 
 
-const int cantidadDeArticulos = 1;              //numero de filas
+const int cantidadDeArticulos = 5;              //numero de filas
 
 const int cantidadDeItems = 3;                             //numero de columnas
 
