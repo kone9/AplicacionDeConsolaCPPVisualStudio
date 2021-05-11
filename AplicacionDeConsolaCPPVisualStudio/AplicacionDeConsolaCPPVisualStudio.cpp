@@ -5,6 +5,48 @@
 
 using namespace std;
 
+
+
+void PunterosSinFormato();//para hacer ejercicios con punteros
+
+int main()
+{
+	PunterosSinFormato();
+	return 0;
+}
+
+class MyClass
+{
+	private:
+		int x;
+	public:
+		MyClass() :x(0) {}
+};
+
+//ejercicios de punteros uno
+void PunterosSinFormato()
+{
+	int var = 250;//declaro variable
+	int *ptr_var = &var;//guardo la direccion de memoría de var. se usa & para obtener la direccion de la memoría
+
+	MyClass obj; //declaro variable de tipo clase
+	MyClass* ptr_obj = &obj;//apuntando puntero a la direccion de memoria. se usa & para obtener la direccion de la memoría
+	
+	cout<< "valor de la variable: " << var << endl;
+	cout << "direccion de memoria de la variable var: " << &var << endl;
+	cout << "direccion almacenada en el ptr_var: " << ptr_var << endl;
+	cout << "-------------------------------------------------------" << endl;
+	cout << "direccion de memoria del objeto obj: " << &obj << endl;
+	cout << "Direccion almacenada en el puntero ptr_obj: " << ptr_obj << endl;
+}
+
+
+
+
+///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+///Esto es un menu con opciones tengo que pasarlo a una clase
+
 void MenuInicial();//muestra el menu inicial
 void Registrar();//para guardar los articulos
 void Listar();//para ver los articulos
@@ -15,11 +57,9 @@ const int cantidadDeArticulos = 5;              //numero de filas
 
 const int cantidadDeItems = 3;                             //numero de columnas
 
-string  datosDeComputadora [cantidadDeArticulos][cantidadDeItems];
+string  datosDeComputadora[cantidadDeArticulos][cantidadDeItems];
 
-
-
-int main()
+void iniciarMenu()
 {
 	while (true)
 	{
@@ -59,7 +99,6 @@ void MenuInicial()//implemento la función
 	}
 	return;
 }
-
 
 void Registrar()
 {
@@ -200,14 +239,3 @@ void Eliminar()
 	}
 }
 
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
