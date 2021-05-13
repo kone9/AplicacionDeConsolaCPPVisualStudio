@@ -8,13 +8,53 @@ using namespace std;
 
 
 void PunterosSinFormato();//para hacer ejercicios con punteros
+void EjemploPunteroAsignacion(); //cambiar valores de variables usando punteros
 
 int main()
 {
-	PunterosSinFormato();
+	EjemploPunteroAsignacion();
 	return 0;
 }
 
+
+
+///Punteros asingnacion por referencia a valores////
+void EjemploPunteroAsignacion()
+{
+	int variable = 0;//creamos una variable
+	cout << "valor de la variable al comienzo: " << variable << endl;
+	
+	int * apuntador = nullptr;//Creamos un apuntador 
+	apuntador = &variable;//guardamos la dirección de memoría de donde esta alojada VARIABLE
+	cout << "direccion de memoria de la variable variable: " << variable << endl;
+	
+	*apuntador = 20;// Asignamos a esa posicion de memoría un valor, osea sería como cambiar el valor de VARIABLE pero con un puntero
+	cout << "valor de la variable luego de modificarla por referencia: " << variable << endl;
+	
+	*apuntador = *apuntador + variable;//Hago una suma haciendo referencia a valores
+	cout << "Hago una suma haciendo referencia a valores: " << *apuntador << endl;//de esta forma trabajo directamente con la variable desde el puntero
+	
+	//delete[] apuntador;//despues de operar con punteros es necesario liberar la memoría
+	
+	cout << endl;
+
+	char* apuntadorALetra = nullptr;//Declaramos un puntero. Es recomendable inicializar un puntero en null, para detectar errores fácilmente
+
+	char letra;//declaramos una variable primitiva
+
+	apuntadorALetra = &letra;//Asignamos al apuntador la dirección de memoria de la variable primitiva
+
+	*apuntadorALetra = 'x';//modificamos la variable a traves del apuntador
+
+	cout << "El valor por referencia modificado de 'letra' es: " << letra << endl;//de esta forma trabajo directamente con la variable desde el puntero
+
+
+}
+
+
+
+///////////////////////////////////////////////////////////////////////
+///punteros ejercicio básico con clases///////
 class MyClass
 {
 	private:
@@ -39,7 +79,7 @@ void PunterosSinFormato()
 	cout << "direccion de memoria del objeto obj: " << &obj << endl;
 	cout << "Direccion almacenada en el puntero ptr_obj: " << ptr_obj << endl;
 }
-
+/////////////////////////////////////////////////////////////////////////////
 
 
 
