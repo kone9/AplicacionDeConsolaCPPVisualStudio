@@ -26,6 +26,6 @@ int FuncionesConParametrosPorReferencía::Funcion(int valor)
 int FuncionesConParametrosPorReferencía::FuncionPunteros(int* valor)//funcion con puntero como parametro
 {
 	*valor = *valor + 10;//la referencia a esa variable es igual a la referencia mas 10;
-	return *valor;//regreso la referencia al valor
+	return *valor;//regreso la referencia al valor aca esta la magia de seguir aumentando el valor de esa variable
 }
 

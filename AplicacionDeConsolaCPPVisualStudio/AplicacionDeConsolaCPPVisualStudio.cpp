@@ -14,6 +14,7 @@ void EjemploPunteroAsignacion(); //cambiar valores de variables usando punteros
 int main()
 {
 	FuncionesConParametrosPorReferencía _FuncionesConParametrosPorReferencía;// no es necesario new para crear el objeto de la clase
+	
 	return 0;
 }
 
