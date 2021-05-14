@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include "FuncionesConParametrosPorReferencía.h"
 
 using namespace std;
 
@@ -12,9 +13,16 @@ void EjemploPunteroAsignacion(); //cambiar valores de variables usando punteros
 
 int main()
 {
-	EjemploPunteroAsignacion();
+	FuncionesConParametrosPorReferencía _FuncionesConParametrosPorReferencía;// no es necesario new para crear el objeto de la clase
 	return 0;
 }
+
+
+
+//funciones con parametros por referencía///////////
+
+
+
 
 
 
