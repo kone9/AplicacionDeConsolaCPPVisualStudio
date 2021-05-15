@@ -40,6 +40,6 @@ void FuncionesConParametrosPorReferencía::FuncionPunteros(int* valor)//funcion c
 
 void FuncionesConParametrosPorReferencía::FuncionesconParametrosReferenciaPorAlias(int& valor)//funciona igual que un puntero, pero no recibe la referencia, sino la misma variable del mismo tipo
 {
-	valor = valor + 50;
+	valor = valor + 50;//la referencia por alias de esa variable es igual a la referencia mas 50;
 }
 
