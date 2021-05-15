@@ -27,10 +27,9 @@ FuncionesConParametrosPorReferencía::FuncionesConParametrosPorReferencía()
 
 }
 
-int FuncionesConParametrosPorReferencía::Funcion(int valor)//funcion común y corriente recibe el valor de tipo entero como parametro
+void FuncionesConParametrosPorReferencía::Funcion(int valor)//funcion común y corriente recibe el valor de tipo entero como parametro
 {
 	valor = valor + 10;
-	return valor;
 }
 
 void FuncionesConParametrosPorReferencía::FuncionPunteros(int* valor)//funcion con puntero como parametro, recibe la referencia a la memoria con "&nombrevariable"

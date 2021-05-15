@@ -8,7 +8,7 @@ public:
 
 private:
 	//"FUNCION" funcion comun que devuelve un valor de tipo entero
-	int Funcion( int valor );
+	void Funcion( int valor );
 
 	//"ACCION" funcion con puntero como parametro, recibo la direccion de memoria de la variable , se suele utilizar para modificar valor de variable dentro de funciones de una manera media complicada
 	void FuncionPunteros(int* valor);
