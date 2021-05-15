@@ -33,15 +33,13 @@ int FuncionesConParametrosPorReferencía::Funcion(int valor)//funcion común y cor
 	return valor;
 }
 
-int FuncionesConParametrosPorReferencía::FuncionPunteros(int* valor)//funcion con puntero como parametro, recibe la referencia a la memoria con "&nombrevariable"
+void FuncionesConParametrosPorReferencía::FuncionPunteros(int* valor)//funcion con puntero como parametro, recibe la referencia a la memoria con "&nombrevariable"
 {
 	*valor = *valor + 10;//la referencia a esa variable es igual a la referencia mas 10;
-	return *valor;//regreso la referencia al valor aca esta la magia de seguir aumentando el valor de esa variable
 }
 
-int FuncionesConParametrosPorReferencía::FuncionesconParametrosReferenciaPorAlias(int& valor)//funciona igual que un puntero, pero no recibe la referencia, sino la misma variable del mismo tipo
+void FuncionesConParametrosPorReferencía::FuncionesconParametrosReferenciaPorAlias(int& valor)//funciona igual que un puntero, pero no recibe la referencia, sino la misma variable del mismo tipo
 {
 	valor = valor + 50;
-	return valor;
 }
 
