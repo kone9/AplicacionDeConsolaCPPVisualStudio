@@ -21,9 +21,15 @@
     <ClCompile Include="FuncionesConParametrosPorReferencía.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PalindromoEjercicio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncionesConParametrosPorReferencía.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PalindromoEjercicio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

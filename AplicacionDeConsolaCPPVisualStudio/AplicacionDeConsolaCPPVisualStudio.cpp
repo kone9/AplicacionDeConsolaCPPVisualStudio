@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "FuncionesConParametrosPorReferencía.h"
+#include "PalindromoEjercicio.h"
 
 using namespace std;
 
@@ -13,8 +14,10 @@ void EjemploPunteroAsignacion(); //cambiar valores de variables usando punteros
 
 int main()
 {
-	FuncionesConParametrosPorReferencía _FuncionesConParametrosPorReferencía;// no es necesario new para crear el objeto de la clase
+	//FuncionesConParametrosPorReferencía _FuncionesConParametrosPorReferencía;// no es necesario new para crear el objeto de la clase
 	
+	PalindromoEjercicio _PalindromoEjercicio;//no es necesario new para crear el objeto de la clase
+
 	return 0;
 }
 

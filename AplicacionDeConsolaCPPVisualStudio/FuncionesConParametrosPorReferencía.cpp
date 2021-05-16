@@ -6,30 +6,28 @@ using namespace std;
 FuncionesConParametrosPorReferencía::FuncionesConParametrosPorReferencía()
 {
 	int numero = 10;
-
 	cout << "antes de la funcion con parametro comun: " << numero << endl;
-	Funcion(numero);//parametro por valor
+	FuncionComun(numero);//parametro por valor
 	cout << "Despues de la funcion con parametro comun: " << numero << endl;
-
 	cout << endl;
-
 	cout << "Antes de la funcion punteros: " << numero << endl;
 	FuncionPunteros(&numero);//referencia a la dirección de memoria de la variable numero //Se envía la dirección de memoria y la función resuelve la referencia
 	cout << "Despues de la funcion punteros: " << numero << endl;
-
 	cout << endl;
-
 	cout << "Antes de la funcion con referencia por alias: " << numero << endl;
 	FuncionesconParametrosReferenciaPorAlias(numero);//referencia por alias es como usar la misma variable pero con otra, tiene que devolver el resultado con la suma en la variable numero
 	cout << "Despues de la funcion con referencia por alias: " << numero << endl;
-
-
-
 }
 
-void FuncionesConParametrosPorReferencía::Funcion(int valor)//funcion común y corriente recibe el valor de tipo entero como parametro
+
+
+
+
+
+
+void FuncionesConParametrosPorReferencía::FuncionComun(int valor)//funcion común y corriente recibe el valor de tipo entero como parametro
 {
-	valor = valor + 10;
+	valor = valor + 10;//solo se ejecuta dentro de este bloque
 }
 
 void FuncionesConParametrosPorReferencía::FuncionPunteros(int* valor)//funcion con puntero como parametro, recibe la referencia a la memoria con "&nombrevariable"

@@ -141,9 +141,11 @@
   <ItemGroup>
     <ClCompile Include="AplicacionDeConsolaCPPVisualStudio.cpp" />
     <ClCompile Include="FuncionesConParametrosPorReferencía.cpp" />
+    <ClCompile Include="PalindromoEjercicio.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncionesConParametrosPorReferencía.h" />
+    <ClInclude Include="PalindromoEjercicio.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
