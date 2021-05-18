@@ -22,8 +22,8 @@ ArrayDinamicoPunteros::ArrayDinamicoPunteros()
 
 void ArrayDinamicoPunteros::GuardarTitulosYAutoresDeLibros(int cantidadDeLibros)
 {
-	titulos = new string[cantidadDeLibros];//arreglo dinamico
-	autores = new string[cantidadDeLibros];//arreglo dinamico
+	titulos = new string[cantidadDeLibros];//arreglo dinamico con punteros
+	autores = new string[cantidadDeLibros];//arreglo dinamico con punteros
 
 	cout << "por favor ingresa la siguiente información de los libros" << endl;
 
