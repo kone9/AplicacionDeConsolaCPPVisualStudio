@@ -1,34 +1,24 @@
-// AplicacionDeConsolaCPPVisualStudio.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 #include "FuncionesConParametrosPorReferencía.h"
 #include "PalindromoEjercicio.h"
+#include "ArrayDinamicoPunteros.h"
 
 using namespace std;
 
-
-
-void PunterosSinFormato();//para hacer ejercicios con punteros
-void EjemploPunteroAsignacion(); //cambiar valores de variables usando punteros
-
 int main()
 {
-	//FuncionesConParametrosPorReferencía _FuncionesConParametrosPorReferencía;// no es necesario new para crear el objeto de la clase
-	
-	PalindromoEjercicio _PalindromoEjercicio;//no es necesario new para crear el objeto de la clase
-
+	ArrayDinamicoPunteros _ArrayDinamicoPunteros;
 	return 0;
 }
 
 
 
-//funciones con parametros por referencía///////////
 
 
 
-
-
+void PunterosSinFormato();//para hacer ejercicios con punteros
+void EjemploPunteroAsignacion(); //cambiar valores de variables usando punteros
 
 ///Punteros asingnacion por referencia a valores////
 void EjemploPunteroAsignacion()
