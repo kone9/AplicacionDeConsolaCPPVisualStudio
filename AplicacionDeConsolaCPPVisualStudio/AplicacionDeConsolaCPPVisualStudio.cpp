@@ -1,14 +1,19 @@
 
 #include <iostream>
+//#include <stdio.h>//para usar print en C++
+#include "stdio.h"
 #include "FuncionesConParametrosPorReferencía.h"
 #include "PalindromoEjercicio.h"
 #include "ArrayDinamicoPunteros.h"
+#include "leap_year.h"
 
 using namespace std;
 
 int main()
 {
-	ArrayDinamicoPunteros _ArrayDinamicoPunteros;
+	leap_year VerificarAnio;
+	
+	//ArrayDinamicoPunteros _ArrayDinamicoPunteros;
 	return 0;
 }
 

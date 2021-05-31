@@ -27,6 +27,9 @@
     <ClCompile Include="ArrayDinamicoPunteros.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="leap_year.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncionesConParametrosPorReferencía.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ArrayDinamicoPunteros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="leap_year.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
