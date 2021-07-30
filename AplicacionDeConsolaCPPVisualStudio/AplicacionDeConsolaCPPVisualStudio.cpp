@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-	leap_year VerificarAnio;
+	//leap_year VerificarAnio;
 	
 	//ArrayDinamicoPunteros _ArrayDinamicoPunteros;
 	return 0;

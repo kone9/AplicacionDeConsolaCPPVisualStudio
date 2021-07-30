@@ -30,6 +30,9 @@
     <ClCompile Include="leap_year.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Calcular_Texel_Density.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncionesConParametrosPorReferencía.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="leap_year.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Calcular_Texel_Density.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

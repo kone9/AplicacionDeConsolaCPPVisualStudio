@@ -141,12 +141,14 @@
   <ItemGroup>
     <ClCompile Include="AplicacionDeConsolaCPPVisualStudio.cpp" />
     <ClCompile Include="ArrayDinamicoPunteros.cpp" />
+    <ClCompile Include="Calcular_Texel_Density.cpp" />
     <ClCompile Include="FuncionesConParametrosPorReferencía.cpp" />
     <ClCompile Include="leap_year.cpp" />
     <ClCompile Include="PalindromoEjercicio.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayDinamicoPunteros.h" />
+    <ClInclude Include="Calcular_Texel_Density.h" />
     <ClInclude Include="FuncionesConParametrosPorReferencía.h" />
     <ClInclude Include="leap_year.h" />
     <ClInclude Include="PalindromoEjercicio.h" />
